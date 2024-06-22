@@ -1,4 +1,13 @@
-h1, h2, p {
+*{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  //font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+h2, p {
   text-align: center;
 }
 
@@ -20,5 +29,59 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+html, body {
+  margin: 0;
+  height:100%;
+  width:100%;
+  padding:0;
+}
+
+#Start{
+  background-color: black;
+  color: white;
+  display: block;
+  height:100%;
+  width:100%;
+  padding: 60px;
+  padding-left: 120px;
+  box-sizing:border-box;
+  text-align: center;
+}
+
+.headline{
+  display: inline-block;
+  text-align: left;  
+}
+
+#Description{
+  background-color: red;
+  display: block;
+  height:100%;
+  width:100%;
+  padding: 60px;
+  padding-left: 120px;
+  box-sizing:border-box;
+}
+
+#Research{
+  background-color: aqua;
+  display: block;
+  height:100%;
+  width:100%;
+  padding: 60px;
+  padding-left: 120px;
+  box-sizing:border-box;
+}
+
+#Join{
+  background-color: green;
+  display: block;
+  height:100%;
+  width:100%;
+  padding: 60px;
+  padding-left: 120px;
+  box-sizing:border-box;
 }
 
