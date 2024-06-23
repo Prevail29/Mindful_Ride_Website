@@ -1,34 +1,10 @@
+// GLOBAL CSS
 *{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  //font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "slnt" 0;
-}
-
-h2, p {
-  text-align: center;
-}
-
-.current {
-    color: green;
-  }
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-table {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 html, body {
@@ -36,25 +12,71 @@ html, body {
   height:100%;
   width:100%;
   padding:0;
+  scroll-behavior: smooth;
+}
+// GLOBAL CSS
+
+// NAVBAR
+#navbar{
+  transition: 0.5s;
+  position: fixed; 
+  overflow: hidden;
+  background-color: rgba(33, 33, 33, 0.5);
+  top: 0; 
+  width: 100%;  
 }
 
+#navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar .topnav-right {
+  float: right;
+}
+
+// NAVBAR
+
+// SECTION 1
 #Start{
   background-color: black;
   color: white;
-  display: block;
   height:100%;
   width:100%;
-  padding: 60px;
-  padding-left: 120px;
+  padding: 15%;
+  padding-left: 15%;
   box-sizing:border-box;
-  text-align: center;
+  align-items: center;
 }
 
-.headline{
-  display: inline-block;
-  text-align: left;  
+h1 {
+  padding-top: 5%;
+  font-size: 5rem;
+  font-weight: 300;
 }
 
+h2{
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.logo{
+  width: 30%;
+  padding-right: 10%;
+  float: left;
+}
+// SECTION 1
+
+// SECTION 2
 #Description{
   background-color: red;
   display: block;
@@ -64,7 +86,9 @@ html, body {
   padding-left: 120px;
   box-sizing:border-box;
 }
+// SECTION 2
 
+// SECTION 3
 #Research{
   background-color: aqua;
   display: block;
@@ -75,6 +99,18 @@ html, body {
   box-sizing:border-box;
 }
 
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+// SECTION 3
+
+// SECTION 4
 #Join{
   background-color: green;
   display: block;
@@ -85,3 +121,9 @@ html, body {
   box-sizing:border-box;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// SECTION 4
