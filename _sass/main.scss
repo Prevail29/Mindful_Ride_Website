@@ -78,19 +78,27 @@ h2{
 
 // SECTION 2
 #Description{
-  background-color: red;
+  background-color: #b02a2a;
   display: block;
   height:100%;
   width:100%;
   padding: 60px;
   padding-left: 120px;
   box-sizing:border-box;
+}
+
+#Description p{
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 250;
+  color: white;
+  text-shadow: 0px 8px 4px black;
 }
 // SECTION 2
 
 // SECTION 3
 #Research{
-  background-color: aqua;
+  background-color: #0d0a5c;
   display: block;
   height:100%;
   width:100%;
@@ -99,26 +107,65 @@ h2{
   box-sizing:border-box;
 }
 
-table, th, td {
-  border: 1px solid black;
+#Research table, th, td {
+  border: 2px solid white;
   border-collapse: collapse;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 200;
+  padding: 0.5rem;
 }
 
-table {
+#Research table {
   margin-left: auto;
   margin-right: auto;
+}
+
+#Research p{
+  font-size: 2.75rem;
+  font-weight: 250;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 8px 4px black;
+}
+
+#Research .section3_text p{
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 200;
+  text-shadow: 0px 0px 0px black;
 }
 // SECTION 3
 
 // SECTION 4
 #Join{
-  background-color: green;
+  background-color: #0a5c16;
   display: block;
   height:100%;
   width:100%;
   padding: 60px;
   padding-left: 120px;
   box-sizing:border-box;
+}
+
+#Join h2{
+  text-align: center;
+  font-weight: 250;
+  font-size: 5rem;
+  color:white;
+  padding-top: 3rem;
+  text-shadow: 0px 8px 4px black;
+}
+
+#Join button{
+  background-color: #BC1C1C;
+  border: none;
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+  padding: 2rem 5rem; 
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .center {
