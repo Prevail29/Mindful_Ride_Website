@@ -14,3 +14,5 @@ window.addEventListener("scroll", function() {
     }
     prevScrollPos = currentScrollPos;
 });
+
+screen.orientation.lock("portrait-primary");

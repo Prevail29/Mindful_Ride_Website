@@ -14,6 +14,44 @@ html, body {
   padding:0;
   scroll-behavior: smooth;
 }
+
+@media (max-width: 480px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 480px),
+       (max-height: 720px){
+  html {
+      font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+}
+
 // GLOBAL CSS
 
 // NAVBAR
@@ -30,9 +68,9 @@ html, body {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 1vw;
+  padding: 0.75rem;
   text-decoration: none;
-  font-size: 1.2vw;
+  font-size: 1.5rem;
 }
 
 #navbar a:hover {
@@ -47,6 +85,49 @@ html, body {
 // NAVBAR
 
 // SECTION 1
+@media (max-width: 1200px) {
+  .logo{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    padding-top: 5%;
+    font-size: 5rem;
+    font-weight: 300;
+  }
+  
+  h2{
+    font-size: 3rem;
+    font-weight: 200;
+  }
+
+  h1, h2{
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    padding-top: 5%;
+    font-size: 5rem;
+    font-weight: 300;
+  }
+
+  h2{
+    font-size: 2.5rem;
+    font-weight: 200;
+  }
+
+  .logo{
+    width: 30%;
+    padding-right: 10%;
+    float: left;
+  }
+}
+
 #Start{
   background-color: black;
   color: white;
@@ -54,46 +135,43 @@ html, body {
   width:100%;
   padding: 15%;
   padding-left: 15%;
-  box-sizing:border-box;
+  box-sizing: border-box;
   align-items: center;
 }
 
-h1 {
-  padding-top: 5%;
-  font-size: 4.5vw;
-  font-weight: 300;
-}
-
-h2{
-  font-size: 2vw;
-  font-weight: 200;
-}
-
-.logo{
-  width: 30%;
-  padding-right: 10%;
-  float: left;
-}
 // SECTION 1
 
 // SECTION 2
+@media (max-width: 400px) {
+  #Description p{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 250;
+    color: white;
+    text-shadow: 0px 8px 4px black;
+  }
+}
+
+@media (min-width: 400px){
+  #Description p{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 250;
+    color: white;
+    text-shadow: 0px 8px 4px black;
+  }
+}
+
 #Description{
   background-color: #b02a2a;
   display: block;
   height:100%;
   width:100%;
-  padding: 2vw;
-  padding-left: 3vw;
+  padding: 2em;
+  padding-left: 3em;
   box-sizing:border-box;
 }
 
-#Description p{
-  text-align: center;
-  font-size: 3.5vw;
-  font-weight: 250;
-  color: white;
-  text-shadow: 0px 8px 4px black;
-}
 // SECTION 2
 
 // SECTION 3
@@ -111,7 +189,7 @@ h2{
   border: 2px solid white;
   border-collapse: collapse;
   color: white;
-  font-size: 2.3vw;
+  font-size: 2.3rem;
   font-weight: 200;
   padding: 0.5vw;
 }
@@ -121,8 +199,12 @@ h2{
   margin-right: auto;
 }
 
+.table_overflow {
+  overflow-x: auto;
+}
+
 #Research p{
-  font-size: 2vw;
+  font-size: 2.5rem;
   font-weight: 250;
   text-align: center;
   color: white;
@@ -131,13 +213,35 @@ h2{
 
 #Research .section3_text p{
   text-align: left;
-  font-size: 1.6vw;
+  font-size: 1.8rem;
   font-weight: 200;
   text-shadow: 0px 0px 0px black;
 }
 // SECTION 3
 
 // SECTION 4
+@media (max-width: 480px) {
+  #Join h2{
+    text-align: center;
+    font-weight: 250;
+    font-size: 6rem;
+    color:white;
+    padding-top: 30vw;
+    text-shadow: 0px 8px 4px black;
+  }
+}
+
+@media (min-width: 480px) {
+  #Join h2{
+    text-align: center;
+    font-weight: 250;
+    font-size: 6rem;
+    color:white;
+    padding-top: 3vw;
+    text-shadow: 0px 8px 4px black;
+  }
+}
+
 #Join{
   background-color: #0a5c16;
   display: block;
@@ -148,20 +252,11 @@ h2{
   box-sizing:border-box;
 }
 
-#Join h2{
-  text-align: center;
-  font-weight: 250;
-  font-size: 5vw;
-  color:white;
-  padding-top: 3vw;
-  text-shadow: 0px 8px 4px black;
-}
-
 #Join button{
   background-color: #BC1C1C;
   border: none;
   color: white;
-  font-size: 5vw;
+  font-size: 6rem;
   font-weight: 600;
   padding: 2vw 5vw; 
   text-decoration: none;
