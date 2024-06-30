@@ -13,6 +13,7 @@ html, body {
   width:100%;
   padding:0;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 @media (max-width: 480px) {
@@ -70,7 +71,7 @@ html, body {
   text-align: center;
   padding: 0.75rem;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 #navbar a:hover {
@@ -112,12 +113,12 @@ html, body {
 @media (min-width: 1200px) {
   h1 {
     padding-top: 5%;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 300;
   }
 
   h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 200;
   }
 
@@ -137,6 +138,7 @@ html, body {
   padding-left: 15%;
   box-sizing: border-box;
   align-items: center;
+  scroll-snap-align: start;
 }
 
 // SECTION 1
@@ -170,6 +172,7 @@ html, body {
   padding: 2em;
   padding-left: 3em;
   box-sizing:border-box;
+  scroll-snap-align: start;
 }
 
 // SECTION 2
@@ -183,6 +186,7 @@ html, body {
   padding: 1vw;
   padding-left: 2vw;
   box-sizing:border-box;
+  scroll-snap-align: start;
 }
 
 #Research table, th, td {
@@ -203,7 +207,7 @@ html, body {
   overflow-x: auto;
 }
 
-#Research p{
+#Research h2{
   font-size: 2.5rem;
   font-weight: 250;
   text-align: center;
@@ -211,15 +215,129 @@ html, body {
   text-shadow: 0px 8px 4px black;
 }
 
-#Research .section3_text p{
+#Research p{
   text-align: left;
   font-size: 1.8rem;
   font-weight: 200;
+  color: white;
   text-shadow: 0px 0px 0px black;
 }
 // SECTION 3
 
 // SECTION 4
+@media (max-width: 1200px) {
+  #Persona .persona_icon {
+    width: 25%;
+    margin: 0 auto; 
+    align-items: center; 
+    justify-content: center; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #Persona .persona{
+    border: 2px solid white;
+    width: 80%;
+    padding-bottom: 4vw;
+    padding-top: 2vw;
+    padding-left: 0.5vw;
+    margin: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #Persona p{
+    margin-top: 0;
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  #Persona ul li{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: white;
+  }
+}
+
+@media (min-width: 1200px) {
+  #Persona .persona_icon {
+    width: 30%;
+    margin: 0 auto; 
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+  #Persona .persona{
+    border: 2px solid white;
+    width: 30%;
+    padding-bottom: 4vw;
+    padding-top: 2vw;
+    padding-left: 0.5vw;
+    margin: 1vw;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    height: 28rem;
+  }
+  
+  #Persona .persona:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #Persona p{
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+
+  #Persona ul li{
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: white;
+  }
+}
+
+#Persona{
+  background-color: #333333;
+  display: block;
+  height:100%;
+  width:100%;
+  padding: 2vw;
+  padding-left: 4vw;
+  box-sizing:border-box;
+  scroll-snap-align: start;
+}
+
+#Persona h2{
+  font-size: 2.5rem;
+  font-weight: 250;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 8px 4px black;
+}
+
+#Persona h3{
+  font-size: 2rem;
+  font-weight: 250;
+  text-align: center;
+  color: white;
+}
+
+#Persona ul{
+  margin-top: 0;
+}
+
+// SECTION 4
+
+// SECTION 5
 @media (max-width: 480px) {
   #Join h2{
     text-align: center;
@@ -250,6 +368,7 @@ html, body {
   padding: 2vw;
   padding-left: 4vw;
   box-sizing:border-box;
+  scroll-snap-align: start;
 }
 
 #Join button{
@@ -268,4 +387,4 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-// SECTION 4
+// SECTION 5
