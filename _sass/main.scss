@@ -225,8 +225,7 @@ html, body {
 // SECTION 3
 
 // SECTION 4
-@media (max-width: 1200px) and
-       (max-height: 750px){
+@media (max-width: 1200px){
   #Persona .persona_icon {
     width: 20%;
     margin: 0 auto; 
@@ -239,9 +238,9 @@ html, body {
   
   #Persona .persona{
     border: 2px solid white;
-    width: 60%;
-    padding-bottom: 2vw;
-    padding-top: 2vw;
+    width: 50%;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
     padding-left: 0.5vw;
     margin: 1vw;
     display: block;
@@ -251,21 +250,36 @@ html, body {
   
   #Persona p{
     margin-top: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 200;
     color: white;
     margin-bottom: 0.5rem;
   }
   
   #Persona ul li{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 200;
     color: white;
   }
-}
 
+  #Persona h2{
+    font-size: 2.5rem;
+    font-weight: 250;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 8px 4px black;
+  }
+  
+  #Persona h3{
+    font-size: 1.5rem;
+    font-weight: 250;
+    text-align: center;
+    color: white;
+  }
+}
+/* Causes issues on some devices
 @media (max-width: 1200px) and
-       (min-height: 750px) {
+       (min-height: 7px) {
   #Persona .persona_icon {
     width: 25%;
     margin: 0 auto; 
@@ -302,7 +316,7 @@ html, body {
     color: white;
   }
 }
-
+*/
 @media (min-width: 1200px) {
   #Persona .persona_icon {
     width: 30%;
@@ -343,6 +357,22 @@ html, body {
     font-weight: 200;
     color: white;
   }
+
+  #Persona h2{
+    font-size: 2.5rem;
+    font-weight: 250;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 8px 4px black;
+  }
+  
+  #Persona h3{
+    font-size: 2rem;
+    font-weight: 250;
+    text-align: center;
+    color: white;
+  }
+
 }
 
 #Persona{
@@ -356,20 +386,7 @@ html, body {
   scroll-snap-align: start;
 }
 
-#Persona h2{
-  font-size: 2.5rem;
-  font-weight: 250;
-  text-align: center;
-  color: white;
-  text-shadow: 0px 8px 4px black;
-}
 
-#Persona h3{
-  font-size: 2rem;
-  font-weight: 250;
-  text-align: center;
-  color: white;
-}
 
 #Persona ul{
   margin-top: 0;
