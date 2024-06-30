@@ -13,6 +13,7 @@ html, body {
   width:100%;
   padding:0;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 @media (max-width: 480px) {
@@ -137,6 +138,7 @@ html, body {
   padding-left: 15%;
   box-sizing: border-box;
   align-items: center;
+  scroll-snap-align: start;
 }
 
 // SECTION 1
@@ -170,6 +172,7 @@ html, body {
   padding: 2em;
   padding-left: 3em;
   box-sizing:border-box;
+  scroll-snap-align: start;
 }
 
 // SECTION 2
@@ -183,6 +186,7 @@ html, body {
   padding: 1vw;
   padding-left: 2vw;
   box-sizing:border-box;
+  scroll-snap-align: start;
 }
 
 #Research table, th, td {
@@ -309,6 +313,7 @@ html, body {
   padding: 2vw;
   padding-left: 4vw;
   box-sizing:border-box;
+  scroll-snap-align: start;
 }
 
 #Persona h2{
@@ -363,6 +368,7 @@ html, body {
   padding: 2vw;
   padding-left: 4vw;
   box-sizing:border-box;
+  scroll-snap-align: start;
 }
 
 #Join button{
