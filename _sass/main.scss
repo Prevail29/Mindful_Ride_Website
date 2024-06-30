@@ -211,15 +211,96 @@ html, body {
   text-shadow: 0px 8px 4px black;
 }
 
-#Research .section3_text p{
+#Research p{
   text-align: left;
   font-size: 1.8rem;
   font-weight: 200;
+  color: white;
   text-shadow: 0px 0px 0px black;
 }
 // SECTION 3
 
 // SECTION 4
+@media (max-width: 1200px) {
+  #Persona .persona_icon {
+    width: 25%;
+    margin: 0 auto; 
+    align-items: center; 
+    justify-content: center; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #Persona .persona{
+    border: 2px solid white;
+    width: 80%;
+    padding-bottom: 4vw;
+    padding-top: 2vw;
+    padding-left: 0.5vw;
+    margin: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #Persona p{
+    margin-top: 0;
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  #Persona ul li{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: white;
+  }
+}
+
+@media (min-width: 1200px) {
+  #Persona .persona_icon {
+    width: 30%;
+    margin: 0 auto; 
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+  #Persona .persona{
+    border: 2px solid white;
+    width: 30%;
+    padding-bottom: 4vw;
+    padding-top: 2vw;
+    padding-left: 0.5vw;
+    margin: 1vw;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    height: 28rem;
+  }
+  
+  #Persona .persona:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #Persona p{
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+
+  #Persona ul li{
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: white;
+  }
+}
+
 #Persona{
   background-color: #333333;
   display: block;
@@ -245,48 +326,8 @@ html, body {
   color: white;
 }
 
-#Persona p{
-  margin-top: 0;
-  font-size: 1.5rem;
-  font-weight: 200;
-  color: white;
-  margin-bottom: 0.5rem;
-}
-
 #Persona ul{
   margin-top: 0;
-}
-
-#Persona ul li{
-  font-size: 1.5rem;
-  font-weight: 200;
-  color: white;
-}
-
-#Persona .persona_icon {
-  width: 30%;
-  margin: 0 auto; 
-  align-items: center; 
-  justify-content: center; 
-}
-
-#Persona .persona{
-  border: 2px solid white;
-  width: 30%;
-  padding-bottom: 4vw;
-  padding-top: 2vw;
-  padding-left: 0.5vw;
-  margin: 1vw;
-  float: left;
-  display: flex;
-  flex-direction: column;
-  height: 28rem;
-}
-
-#Persona .persona:after{
-  content: "";
-  display: table;
-  clear: both;
 }
 
 // SECTION 4
