@@ -1,7 +1,7 @@
 // Opens Google Docs form in new tab 
 // TODO: Replace url with the Google Docs form
 function openForm(){
-    window.open('https://example.com/', '_blank').focus()
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLScZltOQXFafUObCYSgJic5tCj-y845e89dU7oRRwwI7z6c59A/viewform?usp=sf_link', '_blank').focus()
 }
 
 let prevScrollPos = window.scrollY;
