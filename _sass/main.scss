@@ -134,7 +134,7 @@ html, body {
 }
 
 #Start{
-  background-color: black;
+  background-color: #4E4F9D;
   color: white;
   height:100%;
   width:100%;
@@ -148,6 +148,18 @@ html, body {
 // SECTION 1
 
 // SECTION 2
+@media (max-width: 480px) {
+  #Description{
+    background-image: url("../images/background_mobile/landscape_mobile.png");
+  }
+}
+
+@media (min-width: 480px) {
+  #Description{
+    background-image: url("../images/background/landscape.png");
+  }
+}
+
 @media (max-width: 400px) {
   #Description p{
     text-align: center;
@@ -169,7 +181,7 @@ html, body {
 }
 
 #Description{
-  background-color: #b02a2a;
+  background-color: #EAB8B2;
   display: block;
   height:100%;
   width:100%;
@@ -182,12 +194,26 @@ html, body {
 // SECTION 2
 
 // SECTION 3
+@media (max-width: 480px) {
+  #Research{
+    background-image: url("../images/background_mobile/research_mobile.png");
+    padding: 1vw;
+  }
+}
+
+@media (min-width: 480px) {
+  #Research{
+    background-image: url("../images/background/research.png");
+    padding-top: 3vw
+  }
+}
+
+
 #Research{
-  background-color: #0d0a5c;
+  background-color: #B0C9B8;
   display: block;
   height:100%;
   width:100%;
-  padding: 1vw;
   padding-left: 2vw;
   box-sizing:border-box;
   scroll-snap-align: start;
@@ -281,46 +307,7 @@ html, body {
     color: white;
   }
 }
-/* Causes issues on some devices
-@media (max-width: 1200px) and
-       (min-height: 7px) {
-  #Persona .persona_icon {
-    width: 25%;
-    margin: 0 auto; 
-    align-items: center; 
-    justify-content: center; 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  #Persona .persona{
-    border: 2px solid white;
-    width: 80%;
-    padding-bottom: 4vw;
-    padding-top: 2vw;
-    padding-left: 0.5vw;
-    margin: 1vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  #Persona p{
-    margin-top: 0;
-    font-size: 1.4rem;
-    font-weight: 200;
-    color: white;
-    margin-bottom: 0.5rem;
-  }
-  
-  #Persona ul li{
-    font-size: 1.2rem;
-    font-weight: 200;
-    color: white;
-  }
-}
-*/
+
 @media (min-width: 1200px) {
   #Persona .persona_icon {
     width: 30%;
@@ -380,7 +367,7 @@ html, body {
 }
 
 #Persona{
-  background-color: #333333;
+  background-color: #345C98;
   display: block;
   height:100%;
   width:100%;
@@ -400,6 +387,10 @@ html, body {
 
 // SECTION 5
 @media (max-width: 480px) {
+  #Join{
+    background-image: url("../images/background_mobile/meditation_mobile.png");
+  }
+
   #Join h2{
     text-align: center;
     font-weight: 250;
@@ -411,6 +402,10 @@ html, body {
 }
 
 @media (min-width: 480px) {
+  #Join{
+    background-image: url("../images/background/meditation.png");
+  }
+
   #Join h2{
     text-align: center;
     font-weight: 250;
@@ -422,7 +417,7 @@ html, body {
 }
 
 #Join{
-  background-color: #0a5c16;
+  background-color: #B77FA3;
   display: block;
   height:100%;
   width:100%;
